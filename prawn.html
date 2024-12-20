@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>$PRAWN | Viral Meme Coin</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    
+            body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #181818 url('./images/ce9.png') no-repeat center top;
+            background-size: cover;
+            background-attachment: scroll;
+            color: #ffffff;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 200px auto 20px auto; /* Increased top margin for lower start */
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+        }
+    
+            .section-title {
+                font-size: 2.8rem;
+                margin-bottom: 40px;
+                font-family: 'Montserrat', sans-serif;
+                color: #ce3b1d;
+                text-shadow: 0 0 15px rgba(255, 122, 0, 0.8);
+            }
+    
+            .info-card {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 30px;
+                border-radius: 15px;
+                margin-bottom: 30px;
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+                animation: fadeInUp 1.5s;
+            }
+    
+            .listings {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 30px;
+                animation: fadeIn 1.5s;
+            }
+    
+            .listing-item {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                transition: transform 0.4s, background 0.4s;
+            }
+    
+            .listing-item img {
+                max-width: 100px;
+                margin-bottom: 10px;
+            }
+    
+            .listing-item:hover {
+                transform: translateY(-8px);
+                background: rgba(255, 255, 255, 0.2);
+            }
+    
+            .listing-more {
+                color: #ff7a00;
+                font-size: 1.2rem;
+                margin-top: 20px;
+            }
+    
+            .how-to-buy {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+    
+            .buy-step {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+                transition: transform 0.4s, background 0.4s;
+            }
+    
+            .buy-step h3 {
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+            }
+    
+            .buy-step p {
+                font-size: 1rem;
+            }
+    
+            .buy-step:hover {
+                transform: translateY(-8px);
+                background: rgba(255, 255, 255, 0.2);
+            }
+    
+            footer {
+                background: #202020;
+                color: #ccc;
+                padding: 25px 0;
+                text-align: center;
+                font-size: 1rem;
+            }
+    
+            footer a {
+                color: #ff7a00;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+    
+            .dynamic-button {
+                display: inline-block;
+                padding: 18px 36px;
+                font-size: 1.3rem;
+                border: 2px solid #ff5733;
+                background: #ff7a00;
+                color: #fff;
+                border-radius: 30px;
+                text-decoration: none;
+                transition: all 0.4s ease;
+            }
+    
+            .dynamic-button:hover {
+                background: #ff5733;
+                transform: translateY(-8px);
+            }
+    
+            section, footer, .listings, .info-card, .how-to-buy, .buy-step {
+                width: 100%;
+                box-sizing: border-box;
+            }
+    
+            .stats {
+                font-size: 2rem;
+                margin: 20px 0;
+                color: #ff7a00;
+                font-weight: bold;
+            }
+
+            .loved-by-everybody {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 20px;
+                justify-items: center;
+                align-items: center;
+            }
+
+            .loved-by-everybody img {
+                width: 100%;
+                max-width: 150px;
+                border-radius: 10px;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+            .loved-by-everybody img:hover {
+                transform: scale(1.1);
+                box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+            }
+
+        </style>
+    </head>
+<body>
+    <section>
+        <h2 class="section-title">About Pepe the King Prawn</h2>
+        <div class="info-card">
+            <p>Pepe the King Prawn is a beloved character who has found his way into the crypto world. Known for his playful and energetic personality, Pepe now lives on the Solana blockchain, making his legacy everlasting. With his unmistakable charisma and flair, Pepe has become an icon not only in the meme culture but also in the digital asset space. As a symbol of fun and community-driven innovation, Pepe invites you to embark on an exciting journey to explore the limitless potential of the blockchain universe. Join him on his moon journey and be a part of a community that celebrates creativity, humor, and the spirit of decentralization!</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">300M+ views</h2>
+        <p class="stats">Join the revolution today!</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Listings</h2>
+        <div class="listings">
+            <div class="listing-item">
+                <img src="./images/logow1.png" alt="Crypto.com Logo">
+                <p>Crypto.com</p>
+            </div>
+            <div class="listing-item">
+                <img src="./images/logow2.png" alt="Slingshot Logo">
+                <p>Slingshot</p>
+            </div>
+            <div class="listing-item">
+                <img src="./images/logow3.png" alt="LBank Logo">
+                <p>LBank</p>
+            </div>
+            <div class="listing-item">
+                <img src="./images/logow4.png" alt="AscendEX Logo">
+                <p>AscendEX</p>
+            </div>
+            <div class="listing-item">
+                <img src="./images/logow5.png" alt="MEXC Logo">
+                <p>MEXC</p>
+            </div>
+            <div class="listing-item">
+                <img src="./images/logow6.png" alt="Moonshot Logo">
+                <p>Moonshot</p>
+            </div>
+        </div>
+        <p class="listing-more">More Coming Soon...</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Tokenomics</h2>
+        <div class="info-card">
+            <p><strong>Supply:</strong> 1bn</p>
+            <p><strong>Buy/Sell Tax:</strong> 0%</p>
+            <p><strong>Launched on:</strong> Pump.Fun</p>
+            <p>Fair Launch | LP Burned | Renounced</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">How to Buy</h2>
+        <div class="how-to-buy">
+            <div class="buy-step">
+                <h3>1) Create a Wallet</h3>
+                <p>Visit <a href="https://phantom.app">phantom.app</a> and follow the steps to create an account.</p>
+            </div>
+            <div class="buy-step">
+                <h3>2) Get Some $SOL</h3>
+                <p>Tap BUY in the app to purchase Solana or deposit $SOL from a crypto exchange.</p>
+            </div>
+            <div class="buy-step">
+                <h3>3) Swap $SOL for $PRAWN</h3>
+                <p>Tap SWAP in Phantom and paste the $PRAWN token address.</p>
+            </div>
+            <div class="buy-step">
+                <h3>4) You're Prawnian!</h3>
+                <p>Welcome to the $PRAWN family!</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Create Your Own Meme</h2>
+        <p><a href="https://prawn-meme-generator.onrender.com/" class="dynamic-button">Generate Your Meme</a></p>
+    </section>
+
+
+    <footer>
+        <p>Information by $PRAWN on Solana. Not affiliated with or endorsed by any entity. Refer to the website for guidance.</p>
+        <p>
+            <a href="https://x.com/PepeKing_Prawn"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.instagram.com/pepethekingprawn_sol/"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://dexscreener.com/solana/YGSV5UKCXz3WLAyfviB7oWHQRQbvm5ETtyFVPfystmh"><i class="fas fa-chart-line"></i> Dexscreener</a>
+        </p>
+    </footer>
+</body>
+</html>
