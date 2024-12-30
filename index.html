@@ -17,34 +17,68 @@
             background-size: cover;
             background-attachment: scroll;
             color: #ffffff;
-            overflow-x: hidden;
+            overflow-x: scroll; /* Allow horizontal scrolling if needed */
             scroll-behavior: smooth;
         }
+
+        html, body {
+    overflow-x: auto;
+}
+
+        header {
+                padding: 20px 0;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.8);
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+
+            .social-links {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .social-links a {
+                text-decoration: none;
+                padding: 10px 20px;
+                background: #ff7a00;
+                color: white;
+                border-radius: 30px;
+                font-size: 1rem;
+                transition: background 0.3s;
+            }
+
+            .social-links a:hover {
+                background: #ff5733;
+            }
 
         section {
             padding: 60px 20px;
             max-width: 1200px;
             margin: 200px auto 20px auto; /* Increased top margin for lower start */
             text-align: center;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgb(206, 59, 29);
             border-radius: 20px;
         }
     
             .section-title {
-                font-size: 2.8rem;
+                font-size: 36px;
                 margin-bottom: 40px;
                 font-family: 'Montserrat', sans-serif;
-                color: #ce3b1d;
+                color: rgb(255, 255, 255);
             
             }
     
             .info-card {
-                background: rgba(255, 255, 255, 0.1);
+                background: rgba(39, 31, 31, 0.1);
                 padding: 30px;
                 border-radius: 15px;
                 margin-bottom: 30px;
                 box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
                 animation: fadeInUp 1.5s;
+                width: 300px; /* Fixed width for consistency */
             }
     
             .listings {
@@ -80,9 +114,9 @@
             }
     
             .how-to-buy {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 20px;
+                display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 20px;
             }
     
             .buy-step {
@@ -92,6 +126,7 @@
                 text-align: center;
                 box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
                 transition: transform 0.4s, background 0.4s;
+                width: 300px; /* Fixed width for consistency */
             }
     
             .buy-step h3 {
@@ -212,6 +247,23 @@
         line-height: 1.4;
     }
 
+    .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+            .gallery img:hover {
+                transform: scale(1.1);
+                box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+            }
+
        /* Audio Player Container */
        .audio-player-container {
             position: fixed;
@@ -273,6 +325,7 @@
     </head>
 <body>
 
+
     <div class="audio-player-container">
         <div class="audio-controls">
             <button class="audio-toggle" id="audioToggle">
@@ -293,44 +346,32 @@
         <h2 class="section-title">About Pepe the King Prawn</h2>
         <div class="info-card">
             <p>Pepe the King Prawn is a beloved character who has found his way into the crypto world. Known for his playful and energetic personality, Pepe now lives on the Solana blockchain, making his legacy everlasting. With his unmistakable charisma and flair, Pepe has become an icon not only in the meme culture but also in the digital asset space. As a symbol of fun and community-driven innovation, Pepe invites you to embark on an exciting journey to explore the limitless potential of the blockchain universe. Join him on his moon journey and be a part of a community that celebrates creativity, humor, and the spirit of decentralization!</p>
-        </div>
+            <div class="social-links">
+                <a href="https://x.com/PepeKing_Prawn" target="_blank"><i class="fab fa-x"></i> X</a>
+                <a href="https://www.instagram.com/pepethekingprawn_sol/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.tiktok.com/@pepethekingprawnonsol" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+                <a href="https://dexscreener.com/solana/YGSV5UKCXz3WLAyfviB7oWHQRQbvm5ETtyFVPfystmh" target="_blank"><i class="fas fa-chart-line"></i> Dexscreener</a>
+            </div></div>
     </section>
 
     <section>
-        <h2 class="section-title">500M+ views</h2>
+        <h2 class="section-title">600M+ views</h2>
         <p class="stats">Join the revolution today!</p>
+        <div class="gallery">
+            <img src="./images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="./images/gallery2.jpg" alt="Gallery Image 2">
+            <img src="./images/gallery3.jpg" alt="Gallery Image 3">
+            <img src="./images/gallery4.jpg" alt="Gallery Image 4">
+        </div>
+
+        <div class="gallery">
+            <img src="./images/gallery5.jpg" alt="Gallery Image 1">
+            <img src="./images/gallery6.jpg" alt="Gallery Image 2">
+            <img src="./images/gallery7.jpg" alt="Gallery Image 3">
+            <img src="./images/gallery8.jpg" alt="Gallery Image 4">
+        </div>
     </section>
 
-    <section>
-        <h2 class="section-title">Listings</h2>
-        <div class="listings">
-            <a href="https://crypto.com" target="_blank" class="listing-item">
-                <img src="./images/logow1.png" alt="Crypto.com Logo">
-                <p>Crypto.com</p>
-            </a>
-            <a href="https://slingshot.finance/token/solana/6b7NtVRo6jDSUZ75qfhHgpy99XVkSu1kfoTFu2E3pump" target="_blank" class="listing-item">
-                <img src="./images/logow2.png" alt="Slingshot Logo">
-                <p>Slingshot</p>
-            </a>
-            <a href="https://www.lbank.com/sk/trade/prawn_usdt" target="_blank" class="listing-item">
-                <img src="./images/logow3.png" alt="LBank Logo">
-                <p>LBank</p>
-            </a>
-            <a href="https://ascendex.com/en/cashtrade-spottrading/usdt/prawn" target="_blank" class="listing-item">
-                <img src="./images/logow4.png" alt="AscendEX Logo">
-                <p>AscendEX</p>
-            </a>
-            <a href="https://www.mexc.com/exchange/PRAWN_USDT" target="_blank" class="listing-item">
-                <img src="./images/logow5.png" alt="MEXC Logo">
-                <p>MEXC</p>
-            </a>
-            <a href="https://moonshot.money/bjcmITzVwun0nLg2HTcviBsx?ref=HOKKobXSpg" target="_blank" class="listing-item">
-                <img src="./images/logow6.png" alt="Moonshot Logo">
-                <p>Moonshot</p>
-            </a>
-        </div>
-        <p class="listing-more">More Coming Soon...</p>
-    </section>
 
     <section>
         <h2 class="section-title">Tokenomics</h2>
@@ -366,7 +407,7 @@
                 <p>Tap SWAP in Phantom and paste the $PRAWN token address.</p>
             </div>
             <div class="buy-step">
-                <h3>4) You're Prawnian!</h3>
+                <h3>4) You're a Prawnstar!</h3>
                 <p>Welcome to the $PRAWN family!</p>
             </div>
         </div>
@@ -380,11 +421,7 @@
 
     <footer style="background-image: url('./images/footer-bg.png'); background-size: cover; background-position: center;">
         <p>Information by $PRAWN on Solana. Not affiliated with or endorsed by any entity. Refer to the website for guidance.</p>
-        <p>
-            <a href="https://x.com/PepeKing_Prawn"><i class="fab fa-x"></i> X</a>
-            <a href="https://www.instagram.com/pepethekingprawn_sol/"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://dexscreener.com/solana/YGSV5UKCXz3WLAyfviB7oWHQRQbvm5ETtyFVPfystmh"><i class="fas fa-chart-line"></i> Dexscreener</a>
-        </p>
+
     </footer>
 
     <script>
