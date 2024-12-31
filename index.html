@@ -22,7 +22,7 @@
         }
 
         html, body {
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
         header {
@@ -78,7 +78,8 @@
                 margin-bottom: 30px;
                 box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
                 animation: fadeInUp 1.5s;
-                width: 300px; /* Fixed width for consistency */
+                width: 90%; /* Use relative widths for responsiveness */
+                max-width: 300px; /* Maintain a cap on larger screens */
             }
     
             .listings {
@@ -126,7 +127,8 @@
                 text-align: center;
                 box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
                 transition: transform 0.4s, background 0.4s;
-                width: 300px; /* Fixed width for consistency */
+                width: 90%; /* Use relative widths for responsiveness */
+                max-width: 300px; /* Maintain a cap on larger screens */
             }
     
             .buy-step h3 {
@@ -342,21 +344,23 @@
         Your browser does not support the audio element.
     </audio>
 
-    <section>
+    
+    <section>     <p class="section-title">Join the revolution today!</p><div class="social-links">
+
+        <a href="https://x.com/PepeKing_Prawn" target="_blank"><i class="fab fa-x"></i> X</a>
+        <a href="https://www.instagram.com/pepethekingprawn_sol/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@pepethekingprawnonsol" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://dexscreener.com/solana/YGSV5UKCXz3WLAyfviB7oWHQRQbvm5ETtyFVPfystmh" target="_blank"><i class="fas fa-chart-line"></i> Dexscreener</a>
+    </div>
         <h2 class="section-title">About Pepe the King Prawn</h2>
         <div class="info-card">
             <p>Pepe the King Prawn is a beloved character who has found his way into the crypto world. Known for his playful and energetic personality, Pepe now lives on the Solana blockchain, making his legacy everlasting. With his unmistakable charisma and flair, Pepe has become an icon not only in the meme culture but also in the digital asset space. As a symbol of fun and community-driven innovation, Pepe invites you to embark on an exciting journey to explore the limitless potential of the blockchain universe. Join him on his moon journey and be a part of a community that celebrates creativity, humor, and the spirit of decentralization!</p>
-            <div class="social-links">
-                <a href="https://x.com/PepeKing_Prawn" target="_blank"><i class="fab fa-x"></i> X</a>
-                <a href="https://www.instagram.com/pepethekingprawn_sol/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://www.tiktok.com/@pepethekingprawnonsol" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
-                <a href="https://dexscreener.com/solana/YGSV5UKCXz3WLAyfviB7oWHQRQbvm5ETtyFVPfystmh" target="_blank"><i class="fas fa-chart-line"></i> Dexscreener</a>
-            </div></div>
+</div>
     </section>
 
     <section>
         <h2 class="section-title">600M+ views</h2>
-        <p class="stats">Join the revolution today!</p>
+        <p class="stats">Which Pepe are you today?</p>
         <div class="gallery">
             <img src="./images/gallery1.jpg" alt="Gallery Image 1">
             <img src="./images/gallery2.jpg" alt="Gallery Image 2">
